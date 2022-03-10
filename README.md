@@ -25,28 +25,13 @@ def Fibonacci(n):
 print(Fibonacci(17))
 
 
-# Question 2 of Assignment 1 BUSA 523 SPRING 2022
+# Question 3 of Assignment 3 BUSA 523 SPRING 2022 (Just because I liked that question )
 
-import random
+def all_possible_outcomes(n):               # step 1: input size = n    
+    answer = []                             # step 2: (1)      
+    for i in range(1, 12):                  # step 3: (n )
+        for j in range(i, 12):              # step 4: (n )
+            if(n < i+j and i+j <= 21):      # step 5: (1)            
+                answer.append([i,j])        # step 6: (1)               
 
-# Arbitrary choosing the  the upper bound of the limit
-n = int(input('enter a number between 1 and: '))
-number = random.randint(1,n)
-guess = int(input('enter a number between 1 and {}: '.format(n)))
-print("you will have 5 attempts to guess the number correctly to win")
-
-while guess != number: # When your guess is different from the winning number, two cases occured
-    if guess < number: # Guess is lower than winning number 
-        print('Your guess is low. Please try again')
-        guess = int(input('enter a number between 1 and {}: '.format(n)))
-
-
-
-    if guess > number: # Guess is higher than winning number
-        print('Your guess is high. Please try again')
-        guess = int(input('enter a number between 1 and {}: '.format(n)))
-
-
-while guess == number: # Correctly guessed the winning number 
-    print('Bingo! You guessed it correctly')
-    
+    all_possible_outcomes(15)
