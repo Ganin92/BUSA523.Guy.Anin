@@ -9,7 +9,7 @@ print(n**2)
 
 
 # Creating Function for nth Fibonacci number (a series of numbers in which each number is the sum of the two preceding numbers... exple The Rule is xn = xn−1 + xn−2)
-# the 8th term is the 7th term + the 6th term (fbn(8) is 21 because x8 = x7 + x6, x7 = 13 and x6 = 8) Understand this and you will be able to predict when Bitcoin will hit $100k
+# the 8th term is the 7th term + the 6th term (fbn(18) is 2584, check the website and learn something new today ) Understand this then may be "Bitcoin will hit $100k" lol
 # math is fun so here is  the link where  I am learning about the fibonacci sequence... check it out and have fun https://www.mathsisfun.com/numbers/fibonacci-sequence.html 
 
 def Fibonacci(n):
@@ -22,7 +22,7 @@ def Fibonacci(n):
     else:
         return Fibonacci(n-1) + Fibonacci(n-2)
  
-print(Fibonacci(8))
+print(Fibonacci(17))
 
 
 # Question 2 of Assignment 1 BUSA 523 SPRING 2022
