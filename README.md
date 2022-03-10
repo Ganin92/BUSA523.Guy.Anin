@@ -1,12 +1,16 @@
 # BUSA523.Guy.Anin
 Programming
-# Creating function that will return sqaure of any input integer
+
+
+# Creating function that will return square of any input integer
 n = int(input())
 print(n**2)
 
 
 
-# Creating Function for nth Fibonacci number
+# Creating Function for nth Fibonacci number (a series of numbers in which each number is the sum of the two preceding numbers... exple The Rule is xn = xn−1 + xn−2)
+# the 8th term is the 7th term + the 6th term (fbn(8) is 21 because x8 = x7 + x6, x7 = 13 and x6 = 8) Understand this and you will be able to predict when Bitcoin will hit $100k
+# math is fun so here is  the link where  I am learning about the fibonacci sequence... check it out and have fun https://www.mathsisfun.com/numbers/fibonacci-sequence.html 
 
 def Fibonacci(n):
     if n < 0:
